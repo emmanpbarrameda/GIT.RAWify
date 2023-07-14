@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" viewsource="no">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+  <title>GIT.RAWify</title>
+  <meta name="description" content="Your shortcut to Generate Raw GitHub Links" />
+  <meta http-equiv="imagetoolbar" content="no" />
+
+
+  <!--==================== OPEN GRAPH META TAGS (FOR SOCIAL MEDIA PREVIEW) ===================== -->
+  <!-- Facebook -->
+  <meta property="og:title" content="GIT.RAWify">
+  <meta property="og:description" content="Your shortcut to Generate Raw GitHub Links">
+  <meta property="og:image" content="https://i.imgur.com/ceRkZe6.png">
+  <meta property="og:url" content="https://emmanpbarrameda.github.io/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GIT.RAWify">
+  <meta name="twitter:description" content="Your shortcut to Generate Raw GitHub Links">
+  <meta name="twitter:image" content="https://i.imgur.com/ceRkZe6.png">
+  <meta name="twitter:url" content="https://emmanpbarrameda.github.io/">
+
+  <!-- Discord -->
+  <meta property="twitter:site" content="@emmanpbarrameda">
+  <meta property="twitter:creator" content="@emmanpbarrameda">
+  <meta property="twitter:title" content="GIT.RAWify">
+  <meta property="twitter:description" content="Your shortcut to Generate Raw GitHub Links">
+  <meta property="twitter:image" content="https://i.imgur.com/ceRkZe6.png">
+
+  <!-- Google -->
+  <meta itemprop="name" content="GIT.RAWify">
+  <meta itemprop="description" content="Your shortcut to Generate Raw GitHub Links">
+  <meta itemprop="image" content="https://i.imgur.com/ceRkZe6.png">
+
+  <!-- Pinterest -->
+  <!-- Add Pinterest specific meta tags if needed -->
+
+  <!-- Other Website -->
+  <!-- Add specific meta tags for other websites if needed -->
+
+
+  <!--==================== UNICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <!-- ====================PWA================== -->
+  <link rel="manifest" href="manifest.json" />
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/32.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/72.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/100.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/128.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/144.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/152.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/192.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/256.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/512.png" />
+  <meta name="apple-mobile-web-app-status-bar" content="#5779E0" />
+  <!-- For Firefox and Firefox for Android -->
+  <meta name="msapplication-navbutton-color" content="#5779E0">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#5779E0">
+  <!-- For Chrome, Opera, and Safari -->
+  <meta name="theme-color" content="#5779E0">
+
+  <!-- ============FAVICONS============== -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets//img/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png" />
+  <link rel="icon" type="image/x-icon" href="assets/img/favicons/favicon.ico" />
+
+  <!--==================== SWIPER CSS ====================-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+  <!--==================== ANIMATE CSS ====================-->
+  <link rel="stylesheet" href="assets/css/animate.min.css" />
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!--==================== MATERIAL ICONS ====================-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+
+</head>
+
+<body>
+
+
+  <!-- ===================== LOADER (LOADING CACHE SPLASH SCREEN) ==================== -->
+  <div id="loading" class="loading">
+    <div class="loader">
+      <img src="assets/img/emmanpbarrameda-logo-1x1-white_transparent.png" alt="Loading Image">
+      <div class="bar">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <p class="loading__copyright">Copyright © <span current-year></span> emmanpbarrameda<br>All rights reserved.</p>
+  </div>
+
+
+  <!-- ===================== CIRCLE BG ANIMATION LOOP ==================== -->
+  <div class="circle_bubble__anim">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+
+
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo noSelect">emmanpbarrameda</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+
+          <li class="nav__item">
+            <a href="#convert" class="nav__link noSelect active-link">
+              <i class="uil uil-process nav__icon"></i> Convert
+            </a>
+          </li>
+
+
+          <li class="nav__item">
+            <a href="#help" class="nav__link noSelect">
+              <i class="uil uil-comment-question nav__icon"></i> Help
+            </a>
+          </li>
+
+           <!--
+          <li class="nav__item">
+            <a href="#about" class="nav__link noSelect">
+              <i class="uil uil-user nav__icon"></i> About
+            </a>
+          </li>
+          -->
+
+        </ul>
+        <i class="uil uil-times nav__close noSelect" id="nav-close"></i>
+      </div>
+
+
+      <div class="nav__btns">
+        <!-- theme change button -->
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+        <!-- navigation button -->
+        <div class="nav__toggle noSelect" id="nav-toggle">
+          <i class="uil uil-sort-amount-up nav-drawer"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+
+  <main class="main">
+
+    <!--==================== CONVERT ====================-->
+
+    <section class="convert section" id="convert">
+      <h2 class="section__title convert__title"><convertTitleStyle>GIT.RAWify</convertTitleStyle></h2>
+      <span class="section__subtitle convert__subtitle">.</span>
+
+
+      <div class="convert__container container grid">
+
+
+        <div class="convert__form grid">
+
+          <!-- INPUT/PASTE DATA -->
+          <h3 class="contact-availability__title">GitHub Link</h3>
+          <div class="convert__content">
+            <input type="text" id="githubLink" class="convert__input inputted__text" placeholder="paste github link here" required autocomplete="off">
+            <button type="" class="convert__btn" onclick="convertToRawLink()"><i class="uil uil-message convert__btn__icon"></i>
+            </button>
+          </div>
+
+          <!-- OUTPUT/COPY DATA -->
+          <h3 class="contact-availability__title">Raw Link</h3>
+          <div class="convert__content">
+            <input type="text" id="rawLink" class="convert__input converted__text" placeholder="result" readonly>
+            <button type="" class="convert__btn convert__copy_btn" onclick="copyRawLink()"><i class="uil uil-copy convert__btn__icon"></i>
+            </button>
+          </div>
+
+      <!--==================== NEED HELP ====================-->
+      <div class="home__scroll">
+        <a href="#help" class="home__scroll-button button--flex">
+          <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+          <span class="home__scroll-name">Need Help</span>
+          <i class="uil uil-arrow-down home__scroll-arrow"></i>
+        </a>
+      </div>
+
+        </div>
+
+      </div>
+
+
+
+    </section>
+
+  </main>
+
+
+  <!--==================== HELP ====================-->
+
+  <section class="help section reveal fade-bottom" id="help">
+    <h2 class="section__title">Introduction</h2>
+    <span class="section__subtitle">Read more about GIT.RAWify</span>
+
+    <div class="about__container container grid">
+      <img src="assets/img/github1.png" alt="" class="about__img" />
+
+      <div class="about__data">
+        <p class="about__description">
+          To serve content from GitHub on other websites, you need to convert the GitHub link to a raw link.
+          <br><br><colorTextHighlight>GIT.RAWify</colorTextHighlight> is a tool that simplifies the process by assisting you in converting the GitHub normal
+          link to a GitHub raw link.
+          <br><br>Simply <colorTextHighlight>paste</colorTextHighlight> the GitHub link in the first textbox,
+          click the convert button, and then <colorTextHighlight>copy</colorTextHighlight> your GitHub raw link from the second textbox.</p>
+        </p>
+
+        <div class="about__buttons">
+          <a download="" href="assets/pdf/emmanpbarrameda.pdf" class="button button--flex">
+            Download Resume<i class="uil uil-download-alt button__icon"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </section>  
+  
+
+
+
+  <!--==================== FOOTER ====================-->
+
+  <footer class="footer">
+
+    <div class="footer__bg">
+      <div class="footer__container container grid">
+
+        <!--
+        <div>
+          <h1 class="footer__title">Emman</h1>
+          <span class="footer__subtitle">P. Barrameda</span>
+        </div>
+        -->
+
+        <div class="footer__logo_container">
+          <img class="footer__logo_image" src="assets/img/emmanpbarrameda-logo-1x1-white_transparent_svg.svg"
+            alt="footer logo">
+        </div>
+
+
+
+        <!------- SOCIAL MEDIA ------->
+        <div class="footer__socialmedia_container">
+          
+          <!------- EMAIL ------->
+          <div class="footer__socialmedia ft_1">
+            <a href="" class="email_Link" target="_blank">
+              <i class="uil uil-envelope footer__socialmedia_icon"></i>
+              <span class="footer__hover_text">Email</span>
+            </a>
+          </div> 
+
+          <!------- PORTFOLIO ------->
+          <div class="footer__socialmedia ft_2">
+            <a href="" class="portfolio_Link" target="_blank">
+              <i class="uil uil-globe footer__socialmedia_icon"></i>
+              <span class="footer__hover_text">My Portfolio</span>
+            </a>
+          </div>
+
+          <!------- GITHUB ------->
+          <div class="footer__socialmedia ft_3">
+            <a href="" class="github_Link" target="_blank">
+              <i class="uil uil-github footer__socialmedia_icon"></i>
+              <span class="footer__hover_text">My GitHub</span>
+            </a>
+          </div>    
+          
+          <!------- LINKEDIN ------->
+          <div class="footer__socialmedia ft_4">
+            <a href="" class="linkedin_Link" target="_blank">
+              <i class="uil uil-linkedin-alt footer__socialmedia_icon"></i>
+              <span class="footer__hover_text">LinkedIn</span>
+            </a>
+          </div>               
+
+          <!------- FB ------->
+          <div class="footer__socialmedia ft_5">
+            <a href="" class="facebook_Link" target="_blank">
+              <i class="uil uil-facebook footer__socialmedia_icon"></i>
+              <span class="footer__hover_text">Facebook</span>
+            </a>
+          </div>
+
+        </div>
+      
+        
+      </div>
+
+      <p class="footer__copy">Copyright © <span current-year></span> emmanpbarrameda<br>All rights reserved.</p>
+    </div>
+
+  </footer>
+
+  <!--==================== SCROLL TOP ====================-->
+  <a href="#convert" class="scrollup" id="scroll-up" title="Scroll to Top">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+
+  <!--==================== SCROLL DOWN ====================-->
+  <a href="#help" class="scrolldown" id="scroll-down" title="Scroll to down">
+    <i class="uil uil-arrow-down scrolldown__icon"></i>
+  </a>
+
+  <!--==================== SWIPER JS ====================-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!--==================== SMTP (For Senting Emails) ====================-->
+  <script src="assets/js/smtp.js"></script>
+
+  <!--==================== reCAPTCHA ====================-->
+  <!--
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdUccImAAAAALa1N3ue9L4t8SVRdA3adp2aziIF"></script>
+  -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6LdUccImAAAAALa1N3ue9L4t8SVRdA3adp2aziIF"></script>
+
+  <!--==================== SVG INJECT ====================-->
+  <!--
+  <script src="assets/js/svg-inject.min.js"></script>  
+  -->
+
+  <!--==================== DISABLE WEB TOOLS ====================-->
+  <!-- https://github.com/theajack/disable-devtool/tree/master -->
+  <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>   
+
+  <!--==================== MAIN JS ====================-->
+  <script src="assets/js/main.js"></script>
+
+
+
+  <!--==================== LINKS ====================-->
+  <script>
+
+    //LINKEDIN
+    var linkedin_Var = document.getElementsByClassName('linkedin_Link');
+    Array.from(linkedin_Var).forEach(function (linkElement) {
+      linkElement.href = 'https://www.linkedin.com/in/emmanpbarrameda/';
+    });
+
+    //GITHUB
+    var github_Var = document.getElementsByClassName('github_Link');
+    Array.from(github_Var).forEach(function (linkElement) {
+      linkElement.href = 'https://github.com/emmanpbarrameda';
+    });
+
+    //PORTFOLIO
+    var portfolio_Link = document.getElementsByClassName('portfolio_Link');
+    Array.from(portfolio_Link).forEach(function (linkElement) {
+      linkElement.href = 'https://emmanpbarrameda.github.io';
+    });
+
+    //TELEGRAM
+    var telegram_Var = document.getElementsByClassName('telegram_Link');
+    Array.from(telegram_Var).forEach(function (linkElement) {
+      linkElement.href = 'https://t.me/emmanpbarrameda';
+    });
+
+    //FACEBOOK
+    var facebook_Var = document.getElementsByClassName('facebook_Link');
+    Array.from(facebook_Var).forEach(function (linkElement) {
+      linkElement.href = 'https://facebook.com/emmanpbarrameda';
+    });
+
+    //INSTAGRAM
+    var instagram_Var = document.getElementsByClassName('instagram_Link');
+    Array.from(instagram_Var).forEach(function (linkElement) {
+      linkElement.href = 'https://instagram.com/emmanpbarrameda';
+    });
+
+    //TWITTER
+    var twitter_Var = document.getElementsByClassName('twitter_Link');
+    Array.from(twitter_Var).forEach(function (linkElement) {
+      linkElement.href = 'https://twitter.com/emmanpbarrameda';
+    });
+
+    //YOUTUBE
+    var youtube_Var = document.getElementsByClassName('youtube_Link');
+    Array.from(youtube_Var).forEach(function (linkElement) {
+      linkElement.href = 'https://youtube.com/@emmanpbarrameda';
+    });
+
+    //EMAIL
+    var email_Var = document.getElementsByClassName('email_Link');
+    Array.from(email_Var).forEach(function (linkElement) {
+      linkElement.href = 'mailto:emmanuelbarrameda1@gmail.com';
+    });
+  </script>
+
+
+
+  <!-- ===================== SHOW/HIDE LOADER ==================== -->
+  <script>
+    window.onload = function () {
+      var loadingElement = document.getElementById("loading"); //<-- LOADING CACHE SPLASH SCREEN
+      loadingElement.style.display = "none";
+    };
+  </script>
+
+  <!-- =====================REGISTER SERVICE WORKER================ -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker
+          .register("/serviceWorker.js")
+          .then((res) => console.log("service worker registered successfully"))
+          .catch((err) => console.log("service worker not registered", err));
+      });
+    }
+  </script>
+</body>
+
+</html>

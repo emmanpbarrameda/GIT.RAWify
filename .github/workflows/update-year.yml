@@ -1,0 +1,30 @@
+name: Update Current Year
+
+on:
+  #workflow_dispatch   ##----run now
+  
+  ##scheduled
+  schedule:
+    - cron: '0 0 1 1 *'  # Run on January 1st of every year  
+
+jobs:
+  update-year:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Update Current Year
+        run: |
+          sed -i "s/\[Year\]/$(date +'%Y')/g" README.md
+
+      - name: Configure Git
+        run: |
+          git config user.email "emmanuelbarrameda1@gmail.com"
+          git config user.name "emmanpbarrameda"
+
+      - name: Commit and push changes
+        run: |
+          git add README.md
+          git commit -m "Update current year"
+          git push

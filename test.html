@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .tab-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .tab-content h2 {
+      margin-top: 0;
+    }
+
+    .tab-content p {
+      margin-bottom: 0;
+    }
+
+    .card {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30%; /* adjust height */
+      flex-basis: 50%; /* Adjust this value as per your preference */
+    }
+
+    .plang__button_link {
+      border: none;
+      background: transparent;
+
+      font-size: var(--h3-font-size);
+      font-weight: var(--font-medium);
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--text-color);
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .plang__button_link:hover {
+      color: var(--first-color);
+      /*animation while hovering */
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .plang__button_link i {
+      font-size: 1.4rem;
+      margin-right: var(--mb-0-25);
+    }
+
+    .plang__button_link.active {
+      color: var(--first-color);
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide card">
+        <!-- Java Tab Content -->
+        <div class="tab-content" id="java-content">
+          <li class="plang__tabs_item">
+            <button type="button" class="plang__button_link active"
+              onclick="showTab('java-content', this); changeBackgroundImage('assets/img/skills/java.svg')">
+              <i class="material-icons">code</i>Java
+          </li>
+        </div>
+      </div>
+      <div class="swiper-slide card">
+        <!-- C++ Tab Content -->
+        <div class="tab-content" id="cpp-content">
+          <h2>C++</h2>
+          <p>This is the C++ tab content.</p>
+        </div>
+      </div>
+      <div class="swiper-slide card">
+        <!-- C# Tab Content -->
+        <div class="tab-content" id="csharp-content">
+          <h2>C#</h2>
+          <p>This is the C# tab content.</p>
+        </div>
+      </div>
+      <div class="swiper-slide card">
+        <!-- C Tab Content -->
+        <div class="tab-content" id="c-content">
+          <h2>C</h2>
+          <p>This is the C tab content.</p>
+        </div>
+      </div>
+      <div class="swiper-slide card">
+        <!-- HTML Tab Content -->
+        <div class="tab-content" id="html-content">
+          <h2>HTML</h2>
+          <p>This is the HTML tab content.</p>
+        </div>
+      </div>
+      <div class="swiper-slide card">
+        <!-- Android Tab Content -->
+        <div class="tab-content" id="android-content">
+          <h2>Android</h2>
+          <p>This is the Android tab content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
