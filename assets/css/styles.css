@@ -589,6 +589,11 @@ header {
   transition: 0.3s;
 }
 
+.button__icon_center {
+  font-size: 1.25rem;
+  transition: 0.3s;
+}
+
 .button--white {
   background-color: #fff;
   color: var(--first-color);
@@ -751,11 +756,6 @@ input:-webkit-autofill:active {
   box-shadow: none;
 }
 
-.convert__btn__icon {
-  font-size: 1.25rem;
-  transition: 0.3s;
-}
-
 
 
 
@@ -840,7 +840,6 @@ input:-webkit-autofill:active {
   display: flex;
   justify-content: center;
 }
-
 
 
 /*==================== FOOTER ====================*/
