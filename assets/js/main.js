@@ -11,9 +11,6 @@ const convertedText = document.querySelector('.converted__text');
 
 
 
-
-
-
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -72,6 +69,86 @@ document.addEventListener('contextmenu', function (event) {
   }
 });
 
+
+
+
+
+/*==================== POPUPUP MODAL ====================*/
+
+// Select all the modal views, modal buttons, and modal close buttons
+const modalViews = document.querySelectorAll(".popup__modal"),
+  modalBtns_ReadMore = document.querySelectorAll(".popup__button__clicker"),
+  modalCloses = document.querySelectorAll(".popup__modal-close");
+
+
+// Function to open a modal view WITH ANIMATION
+let modal = function (modalClick) {
+  // Remove active-modal class from all modal views
+  for (var i = 0; i < modalViews.length; i++) {
+    modalViews[i].classList.remove("active-modal", "animate__animated", "animate__fadeIn", "animate__faster");
+  }
+
+  // Delay adding the animation classes to ensure animation triggers consistently
+  setTimeout(function () {
+    // Add active-modal class to the clicked modal view and animate it
+    modalViews[modalClick].classList.add("active-modal", "animate__animated", "animate__fadeIn", "animate__faster");
+  }, 10);
+
+  // Add a class to disable scrolling on the body
+  document.body.classList.add("disable-scroll");
+};
+
+
+// Attach click event listeners to the modal buttons
+modalBtns_ReadMore.forEach((modalBtn1, i) => {
+  modalBtn1.addEventListener("click", () => {
+    modal(i); // Open the corresponding modal view
+  });
+});
+
+
+// Attach click event listeners to the modal close buttons
+modalCloses.forEach((modalClose) => {
+  modalClose.addEventListener("click", closeModal);
+});
+
+
+// Function to close the modal view WITH ANIMATION
+function closeModal() {
+  const activeModal = document.querySelector(".active-modal");
+  if (activeModal) {
+    // Add fade-out animation class to the active modal view
+    activeModal.classList.add("animate__animated", "animate__fadeOut", "animate__faster");
+
+    // Remove the modal and animation classes after the animation finishes
+    setTimeout(function () {
+      activeModal.classList.remove("active-modal", "animate__animated", "animate__fadeOut", "animate__faster");
+      document.body.classList.remove("disable-scroll");
+    }, 500); // Adjust the delay as needed
+  }
+}
+
+
+// Add a keydown event listener to the document
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeModal(); // Close the modal view when the ESC key is pressed
+  }
+});
+
+
+// Store the initial URL hash
+const initialHash = window.location.hash;
+
+// Add a popstate event listener to the window
+window.addEventListener("popstate", () => {
+  const currentHash = window.location.hash;
+
+  // Check if the hash has changed from the initial value
+  if (currentHash !== initialHash) {
+    closeModal(); // Close the modal view when the back button is pressed on mobile
+  }
+});
 
 
 
@@ -146,7 +223,7 @@ function typeEffect() {
       if (currentName === name1) {
         currentName = name2;
       } else if (currentName === name2) {
-        currentName = name1;         
+        currentName = name1;
       } else {
         currentName = name1;
       }
@@ -197,7 +274,7 @@ for (let i = 0; i < convertInputs_ALL.length; i++) {
   convertInput.addEventListener('paste', handleInputChange);
 
   // Attach the 'click' event listener to each button element
-  convertBtn.addEventListener('click', function() {
+  convertBtn.addEventListener('click', function () {
     console.log('You entered:', convertInput.value);
   });
 }
@@ -209,7 +286,7 @@ for (let i = 0; i < convertInputs_ALL.length; i++) {
 
 
 /*===== CHECK IF THE "inputted__text" is empty, then clear the converted__text =====*/
-inputtedText.addEventListener('keyup', function() {
+inputtedText.addEventListener('keyup', function () {
   if (inputtedText.value.trim() === '') {
     convertedText.value = ''; // Clear the converted text if inputted text is empty
     document.querySelector('.convert__copy_btn').disabled = true;    // Disable the COPY BTN 
@@ -227,7 +304,7 @@ function convertToRawLink() {
   var githubLink = document.getElementById("githubLink").value;
 
   /*=== CHECK IF INVALID LINK, BEFORE PROCESS  ===*/
-  if (!isValidGithubLink(githubLink)) { 
+  if (!isValidGithubLink(githubLink)) {
     showAlertToast('Error', 'Invalid Link', 'uil-times');
     inputtedText.focus(); // Focus on converted text
     convertedText.value = ''; // Clear the converted text
@@ -271,7 +348,7 @@ function copyRawLink() {
 const githubLinkInput = document.getElementById('githubLink');
 
 // Add an event listener to the input field
-githubLinkInput.addEventListener('keyup', function(event) {
+githubLinkInput.addEventListener('keyup', function (event) {
   // Check if the "Enter" key was pressed (key code 13)
   if (event.keyCode === 13) {
     // Trigger the button click

@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
-  <title>𝗚𝗜𝗧.𝗥𝗔𝗪𝘪𝘧𝘺 · GitHub Raw Link Generator</title>
+  <title>𝗚𝗜𝗧.𝗥𝗔𝗪𝘪𝘧𝘺 · GitHub Link to Raw Link Converter</title>
   <meta name="description" content="Your shortcut to Generate Raw GitHub Links" />
   <meta http-equiv="imagetoolbar" content="no" />
 
   <!-- https://search.google.com/search-console/about VERIFICATION -->
   <meta name="google-site-verification" content="NcXe_fwBOSWUA2PsHR3at5FBIBAAYVUYCbswnGGYQX0" />
-  
+
   <!-- SITEMAP NEEDS! 
   https://sosteve.medium.com/your-next-js-website-isnt-on-google-time-to-fix-it-c8f92f515e35
   -->
@@ -166,9 +166,9 @@
             <a href="#tutorial" class="nav__link noSelect">
               <i class="uil uil-presentation-play nav__icon"></i> Tutorial
             </a>
-          </li>          
+          </li>
 
-           <!--
+          <!--
           <li class="nav__item">
             <a href="#about" class="nav__link noSelect">
               <i class="uil uil-user nav__icon"></i> About
@@ -200,7 +200,9 @@
     <!--==================== CONVERT ====================-->
 
     <section class="convert section" id="convert">
-      <h2 class="section__title convert__title"><convertTitleStyle>GIT.RAWify</convertTitleStyle></h2>
+      <h2 class="section__title convert__title">
+        <convertTitleStyle>GIT.RAWify</convertTitleStyle>
+      </h2>
       <span class="section__subtitle convert__subtitle">.</span>
 
 
@@ -212,8 +214,10 @@
           <!-- INPUT/PASTE DATA -->
           <h3 class="contact-availability__title">GitHub Link</h3>
           <div class="convert__content">
-            <input type="text" id="githubLink" class="convert__input inputted__text" placeholder="paste github link here" required autocomplete="off">
-            <button type="" class="convert__btn" onclick="convertToRawLink()"><i class="uil uil-message button__icon_center"></i>
+            <input type="text" id="githubLink" class="convert__input inputted__text"
+              placeholder="paste github link here" required autocomplete="off">
+            <button type="" class="convert__btn" onclick="convertToRawLink()"><i
+                class="uil uil-message button__icon_center"></i>
             </button>
           </div>
 
@@ -221,18 +225,19 @@
           <h3 class="contact-availability__title">Raw Link</h3>
           <div class="convert__content">
             <input type="text" id="rawLink" class="convert__input converted__text" placeholder="result" readonly>
-            <button type="" class="convert__btn convert__copy_btn" onclick="copyRawLink()"><i class="uil uil-copy button__icon_center"></i>
+            <button type="" class="convert__btn convert__copy_btn" onclick="copyRawLink()"><i
+                class="uil uil-copy button__icon_center"></i>
             </button>
           </div>
 
-      <!--==================== NEED HELP ====================-->
-      <div class="home__scroll">
-        <a href="#help" class="home__scroll-button button--flex">
-          <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-          <span class="home__scroll-name">Need Help</span>
-          <i class="uil uil-arrow-down home__scroll-arrow"></i>
-        </a>
-      </div>
+          <!--==================== NEED HELP ====================-->
+          <div class="home__scroll">
+            <a href="#help" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Need Help</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
 
         </div>
 
@@ -257,13 +262,17 @@
       <div class="about__data">
         <p class="about__description">
           To serve content from GitHub on other websites, you need to convert the GitHub link to a raw link.
-          <br><br><colorTextHighlight>GIT.RAWify</colorTextHighlight> is a tool that simplifies the process by assisting you in converting the GitHub normal
+          <br><br>
+          <colorTextHighlight>GIT.RAWify</colorTextHighlight> is a tool that simplifies the process by assisting you in
+          converting the GitHub normal
           link to a GitHub raw link.
           <br><br>Simply <colorTextHighlight>paste</colorTextHighlight> the GitHub link in the first textbox,
-          click the convert button, and then <colorTextHighlight>copy</colorTextHighlight> your GitHub raw link from the second textbox.
+          click the convert button, and then <colorTextHighlight>copy</colorTextHighlight> your GitHub raw link from the
+          second textbox.
           <br><br>Made with Love from the Philippines by
           <a href="https://emmanpbarrameda.github.io/" target="_blank" rel="noopener noreferrer">
-            <colorTextHighlight>emmanpbarrameda</colorTextHighlight></a>.
+            <colorTextHighlight>emmanpbarrameda</colorTextHighlight>
+          </a>.
         </p>
 
 
@@ -279,18 +288,52 @@
 
           <!-- SOURCE CODE BUTTON -->
           <div class="about__buttons">
-            <a class="button button--flex">
+            <a class="button button--flex popup__button__clicker">
               About Project<i class="uil uil-user-exclamation button__icon"></i></a>
+          </div>
+
+          <!-- ABOUT PROJECT MODAL! -->
+          <div class="popup__modal">
+            <div class="popup__modal-content">
+              <h4 class="popup__modal-title">About Project</h4>
+              <i class="uil uil-times popup__modal-close"></i>
+              <ul class="popup__modal-services grid">
+
+                <li class="popup__modal-service">
+                  <i class="uil uil-angle-right popup__modal-icon"></i>
+                  <p>
+                    𝗚𝗜𝗧.𝗥𝗔𝗪𝘪𝘧𝘺 version 1
+                  </p>
+                </li>
+
+                <li class="popup__modal-service">
+                  <i class="uil uil-angle-right popup__modal-icon"></i>
+                  <p>
+                    Created by Emmanuel P. Barrameda
+                    from the Philippines.
+                    Check out My Portfolio <a href="https://emmanpbarrameda.github.io/" target="_blank" rel="noopener noreferrer">
+                      <colorTextHighlight>here</colorTextHighlight></a>
+                  </p>
+                </li>
+
+                <li class="popup__modal-service">
+                  <i class="uil uil-angle-right popup__modal-icon"></i>
+                  <p>
+                    Source Code available <a href="https://github.com/emmanpbarrameda/GIT.RAWify" target="_blank" rel="noopener noreferrer">
+                      <colorTextHighlight>here</colorTextHighlight></a>
+                  </p>
+                </li>                
+
+              </ul>
+            </div>
           </div>
 
         </div>
 
-
-
       </div>
     </div>
 
-  </section>  
+  </section>
 
 
   <!--==================== TUTORIAL ====================-->
@@ -300,28 +343,30 @@
     <span class="section__subtitle">Watch the Video Tutorial by Me</span>
 
     <div class="video__container">
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wVsiCJ4JxBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>  
-    
-    <div class="video__btns__container">
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wVsiCJ4JxBY"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
 
+    <div class="video__btns__container">
 
       <!-- TRY NOW -->
       <div class="video__down_buttons">
         <a href="#convert" class="button button--flex">
           Try it Now!<i class="uil uil-angle-double-up button__icon"></i></a>
-      </div>  
+      </div>
 
       <!-- SOURCE CODE -->
       <div class="video__down_buttons">
         <a class="button button--flex">
           Subscribe<i class="uil uil-youtube button__icon"></i></a>
-      </div>        
+      </div>
 
     </div>
 
-  </section>    
-  
+  </section>
+
 
 
 
@@ -348,14 +393,14 @@
 
         <!------- SOCIAL MEDIA ------->
         <div class="footer__socialmedia_container">
-          
+
           <!------- EMAIL ------->
           <div class="footer__socialmedia ft_1">
             <a href="" class="email_Link" target="_blank">
               <i class="uil uil-envelope footer__socialmedia_icon"></i>
               <span class="footer__hover_text">Email</span>
             </a>
-          </div> 
+          </div>
 
           <!------- PORTFOLIO ------->
           <div class="footer__socialmedia ft_2">
@@ -371,15 +416,15 @@
               <i class="uil uil-github footer__socialmedia_icon"></i>
               <span class="footer__hover_text">My GitHub</span>
             </a>
-          </div>    
-          
+          </div>
+
           <!------- LINKEDIN ------->
           <div class="footer__socialmedia ft_4">
             <a href="" class="linkedin_Link" target="_blank">
               <i class="uil uil-linkedin-alt footer__socialmedia_icon"></i>
               <span class="footer__hover_text">LinkedIn</span>
             </a>
-          </div>               
+          </div>
 
           <!------- FB ------->
           <div class="footer__socialmedia ft_5">
@@ -390,8 +435,8 @@
           </div>
 
         </div>
-      
-        
+
+
       </div>
 
       <p class="footer__copy">Copyright © <span current-year></span> emmanpbarrameda<br>All rights reserved.</p>
