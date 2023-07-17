@@ -638,7 +638,7 @@ header {
   color: var(--text-color);
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi-bold);
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 
   overflow-wrap: break-word;
   animation: typing 3s steps(30, end) infinite;
