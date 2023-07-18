@@ -954,6 +954,10 @@ input:-webkit-autofill:active {
   margin-right: var(--mb-0-25);
 }
 
+.popup__link_format {
+  word-break: break-all;
+}
+
 /* Active Modal */
 
 .active-modal {

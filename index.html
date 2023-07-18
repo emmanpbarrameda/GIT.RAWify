@@ -211,21 +211,59 @@
 
         <div class="convert__form grid">
 
-          <!-- INPUT/PASTE DATA -->
-          <h3 class="contact-availability__title">GitHub Link  <span><i class="uil uil-info-circle contact-availability__title_icon"></i></span> </h3>
+          <!-- INPUT/PASTE DATA HEADER -->
+          <h3 class="contact-availability__title">GitHub Link  <span><i class="uil uil-info-circle contact-availability__title_icon popup__button__clicker"></i></span>  </h3>
+
+          <!-- GITHUB LINK INFO // contact-availability__title_icon popup__button__clicker ! -->
+          <div class="popup__modal">
+            <div class="popup__modal-content">
+              <h4 class="popup__modal-title">GitHub Link Example</h4>
+              <i class="uil uil-times popup__modal-close"></i>
+              <ul class="popup__modal-services grid">
+
+                <li class="popup__modal-service">
+                  <i class="uil uil-angle-right popup__modal-icon"></i>
+                  <p>
+                    GitHub Link that can convert using GIT.RAWify should be look like this: <b class="popup__link_format"><br><br>https://github.com/user/project_name/blob/main/output-media/screenshot.png<br></b>
+                  </p>
+                </li>            
+
+              </ul>
+            </div>
+          </div> 
+
+          <!-- INPUT/PASTE DATA CONTENT -->
           <div class="convert__content">
             <input type="text" id="githubLink" class="convert__input inputted__text"
               placeholder="paste github link here" required autocomplete="off">
             <button type="" class="convert__btn" onclick="convertToRawLink()"><i
                 class="uil uil-message button__icon_center"></i>
             </button>
-          </div>
-
-  
+          </div>     
           
 
-          <!-- OUTPUT/COPY DATA -->
-          <h3 class="contact-availability__title">Raw Link  <span><i class="uil uil-info-circle contact-availability__title_icon"></i></span> </h3>
+          <!-- OUTPUT/COPY DATA HEADER -->
+          <h3 class="contact-availability__title">Raw Link  <span><i class="uil uil-info-circle contact-availability__title_icon popup__button__clicker"></i></span>  </h3>
+
+          <!-- RAW LINK INFO // contact-availability__title_icon popup__button__clicker ! -->
+          <div class="popup__modal">
+            <div class="popup__modal-content">
+              <h4 class="popup__modal-title">Raw Link Sample Output</h4>
+              <i class="uil uil-times popup__modal-close"></i>
+              <ul class="popup__modal-services grid">
+
+                <li class="popup__modal-service">
+                  <i class="uil uil-angle-right popup__modal-icon"></i>
+                  <p>
+                    Raw Link output should be look like this: <b class="popup__link_format"><br><br>https://raw.githubusercontent.com/user/project_name/main/output-media/screenshot.png<br></b>
+                  </p>
+                </li>            
+
+              </ul>
+            </div>
+          </div> 
+
+          <!-- OUTPUT/COPY DATA CONTENT -->
           <div class="convert__content">
             <input type="text" id="rawLink" class="convert__input converted__text" placeholder="result" readonly>
             <button type="" class="convert__btn convert__copy_btn" onclick="copyRawLink()"><i
