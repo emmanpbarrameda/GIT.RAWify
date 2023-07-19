@@ -56,14 +56,14 @@
 <!-- ------ -->
 
 ## 💻 User Interface
-- Preview
+- <b>Preview</b>
 <p align="center">
   <img src="https://raw.githubusercontent.com/emmanpbarrameda/GIT.RAWify/main/output/screen_record_gif2.gif" width="800" alt="GIF" />
   <br><br>
   <img src="https://raw.githubusercontent.com/emmanpbarrameda/GIT.RAWify/main/output/ui_image.png" width="800" alt="Image" />
 </p>
 
-- YouTube Tutorial
+- <b>YouTube Tutorial</b>
 <p align="center">
   <a href="https://www.youtube.com/watch?v=9mlEIw5V7vk" target="_blank">
     <img src="https://img.youtube.com/vi/9mlEIw5V7vk/maxresdefault.jpg" width="800" alt="YouTube Tutorial" />
