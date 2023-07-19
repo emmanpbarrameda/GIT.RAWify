@@ -61,7 +61,7 @@
   <img src="https://raw.githubusercontent.com/emmanpbarrameda/GIT.RAWify/main/output/screen_record_gif2.gif" width="800" alt="GIF" />
   <br><br>
   <img src="https://raw.githubusercontent.com/emmanpbarrameda/GIT.RAWify/main/output/ui_image.png" width="800" alt="Image" />
-</p>
+</p><br>
 
 - <b>YouTube Tutorial</b>
 <p align="center">
