@@ -80,7 +80,7 @@
 - <b>Help Section:</b> Need assistance? Visit our help section for step-by-step instructions and detailed information about our website. Find answers to common questions and make the most out of our services.
 - <b>Tutorial Section:</b> Watch our informative YouTube video tutorial embedded in this section. Learn how to use our tool effectively and enhance your GitHub experience. Follow along with the tutorial to maximize the benefits of our converter.
 - <b>Friendly UI: </b> The user interface (UI) of the system is designed to be user-friendly, intuitive, and easy to navigate, enhancing the overall user experience.
-- <b>Open Source Code: </b> The system is developed using open-source HTML, CSS and Javascript code, allowing for customization and flexibility.<br> Read the [LICENSE](https://github.com/emmanpbarrameda/ZABSystem_Java-CODE#-license) for more information.
+- <b>Open Source Code: </b> The system is developed using open-source HTML, CSS and Javascript code, allowing for customization and flexibility.<br> Read the [LICENSE](https://github.com/emmanpbarrameda/GIT.RAWify#-license) for more information.
 <br>
 
 
