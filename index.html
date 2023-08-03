@@ -109,7 +109,7 @@
 <body>
 
 
-  <!-- ===================== LOADER (LOADING CACHE SPLASH SCREEN) ==================== -->
+  <!-- ===================== LOADER ==================== -->
   <div id="loading" class="loading">
     <div class="loader">
       <img src="assets/img/emmanpbarrameda-logo-1x1-white_transparent.png" alt="Loading Image">
@@ -120,9 +120,26 @@
         <span></span>
         <span></span>
       </div>
+      <p class="loading__description">Welcome! Just a moment . . .</p>
     </div>
     <p class="loading__copyright">Copyright © <span current-year></span> emmanpbarrameda<br>All rights reserved.</p>
   </div>
+
+  <!-- Function to update the loading__description -->
+  <script>
+    function updateLoadingText() {
+      const loadingDescription = document.querySelector(".loading__description");
+      if (loadingDescription.textContent === "Welcome! Just a moment . . .") {
+        loadingDescription.textContent = "Getting things ready for you . . .";
+      } else {
+        loadingDescription.textContent = "Welcome! Just a moment . . .";
+      }
+    }
+  
+    // Call the updateLoadingText function every 3 seconds
+    setInterval(updateLoadingText, 3000);
+  </script>  
+
 
 
   <!-- ===================== CIRCLE BG ANIMATION LOOP ==================== -->
